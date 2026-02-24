@@ -1,4 +1,4 @@
-# company-gi MCP Server
+# 🇬🇮 company-gi MCP Server
 
 Gibraltar company tools for AI agents. Calculate corporate tax payments, check compliance deadlines, and generate pre-filled PDF form packs for Gibraltar Companies House.
 
