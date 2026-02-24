@@ -1,18 +1,29 @@
 {
-  "name": "@company-gi/mcp",
+  "name": "company-gi-mcp",
   "version": "1.0.0",
-  "description": "MCP server for Gibraltar company tools. Calculate corporate tax, check compliance deadlines, and generate pre-filled PDF forms for Companies House.",
+  "mcpName": "io.github.company-gibraltar/company-gi",
+  "description": "Gibraltar company tools for AI agents. Calculate corporate tax payments, check compliance deadlines, and generate pre-filled PDF form packs for Gibraltar Companies House.",
   "type": "module",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
+  "bin": {
+    "company-gi-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "start": "npx tsx src/server.ts"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "tsx": "^4.19.0",
+    "@types/node": "^25.3.0",
     "typescript": "^5.7.0"
   },
   "keywords": [
@@ -24,7 +35,8 @@
     "compliance",
     "pdf-generation",
     "ai-agent",
-    "ai-tools"
+    "ai-tools",
+    "companies-house"
   ],
   "license": "MIT",
   "repository": {
