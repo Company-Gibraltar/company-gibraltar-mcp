@@ -1,6 +1,6 @@
-# 🇬🇮 company-gi MCP Server
+# 🇬🇮 company-gibraltar MCP Server
 
-[![npm](https://img.shields.io/npm/v/company-gi-mcp)](https://www.npmjs.com/package/company-gi-mcp)
+[![npm](https://img.shields.io/npm/v/company-gibraltar-mcp)](https://www.npmjs.com/package/company-gibraltar-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Gibraltar company tools for AI agents. Calculate corporate tax payments, check compliance deadlines, and generate pre-filled PDF form packs for Gibraltar Companies House.
@@ -21,13 +21,13 @@ Gibraltar company tools for AI agents. Calculate corporate tax payments, check c
 ## Install
 
 ```bash
-npm install -g company-gi-mcp
+npm install -g company-gibraltar-mcp
 ```
 
 Or run directly with npx (no install needed):
 
 ```bash
-npx company-gi-mcp
+npx company-gibraltar-mcp
 ```
 
 ## Setup
@@ -39,9 +39,9 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "company-gi": {
+    "company-gibraltar": {
       "command": "npx",
-      "args": ["-y", "company-gi-mcp"],
+      "args": ["-y", "company-gibraltar-mcp"],
       "env": {
         "COMPANY_GI_API_URL": "https://company.gi"
       }
@@ -53,7 +53,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add company-gi -- npx -y company-gi-mcp
+claude mcp add company-gibraltar -- npx -y company-gibraltar-mcp
 ```
 
 ### Cursor / Windsurf
@@ -63,9 +63,9 @@ Same configuration format in your MCP settings file:
 ```json
 {
   "mcpServers": {
-    "company-gi": {
+    "company-gibraltar": {
       "command": "npx",
-      "args": ["-y", "company-gi-mcp"],
+      "args": ["-y", "company-gibraltar-mcp"],
       "env": {
         "COMPANY_GI_API_URL": "https://company.gi"
       }

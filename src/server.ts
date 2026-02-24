@@ -10,7 +10,7 @@ import { companyFormationSchema, handleCompanyFormation } from './tools/company-
 import { egovAccountSchema, handleEgovAccount } from './tools/egov-account.js'
 
 const server = new McpServer({
-  name: 'company-gi',
+  name: 'company-gibraltar',
   version: '1.0.0',
 })
 
