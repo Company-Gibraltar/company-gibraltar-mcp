@@ -1,7 +1,7 @@
 {
   "name": "company-gi-mcp",
-  "version": "1.0.0",
-  "mcpName": "io.github.company-gibraltar/company-gi",
+  "version": "1.0.1",
+  "mcpName": "io.github.Company-Gibraltar/company-gi",
   "description": "Gibraltar company tools for AI agents. Calculate corporate tax payments, check compliance deadlines, and generate pre-filled PDF form packs for Gibraltar Companies House.",
   "type": "module",
   "main": "dist/server.js",
